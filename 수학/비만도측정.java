@@ -1,10 +1,9 @@
 package 수학;
 import java.util.*;
 
-import javax.swing.event.SwingPropertyChangeSupport;
-
 class Solution3{
     public static void main(String[] args) {
+
         Solution3 solution = new Solution3();
         Scanner scanner = new Scanner(System.in);
         System.out.println("이름 : ");
@@ -13,12 +12,12 @@ class Solution3{
         float cm = scanner.nextFloat();
         System.out.println("몸무게 : ");
         int kg = scanner.nextInt();
-        
         System.out.println(solution.solution(cm, kg, name));
         
     }
     String solution(float cm, int kg, String name){
-        String title = "        ###### 비만도 계산 ###### " ;
+
+        String title = "###### 비만도 계산 ###### " ;
         float bmi = 0;
         float meter = 0;
         String biman = "";
@@ -37,7 +36,7 @@ class Solution3{
         +"\n ****************************************"
         +"\n %s   %.1fcm   %dkg    %s   %.1f "
         +"\n ****************************************", title, name, cm, kg, biman, bmi);
-
+        
     }
 
 }
